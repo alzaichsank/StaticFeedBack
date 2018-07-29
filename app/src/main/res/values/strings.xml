@@ -1,3 +1,56 @@
 <resources>
     <string name="app_name">StaticHelp</string>
+
+
+    <!--help-->
+    <string name="help1">
+     ask1?
+ </string>
+    <string name="answer1">
+    answer1
+    </string>
+    <string name="help2">
+     ask2?
+ </string>
+    <string name="answer2">
+    answer2
+ </string>
+    <string name="help3">
+     ask3?
+ </string>
+    <string name="answer3">
+   answer3
+ </string>
+    <string name="help4">
+     ask4?
+ </string>
+    <string name="answer4">
+    answer4
+</string>
+    <string name="help5">
+     ask5?
+ </string>
+    <string name="answer5">
+    answer5
+
+ </string>
+    <string name="help6">
+     ask6?
+ </string>
+    <string name="answer6">
+     answer6
+</string>
+    <string name="help7">
+     ask7?
+ </string>
+    <string name="answer7">
+     answer7
+</string>
+    <string name="help8">
+     ask8?
+ </string>
+    <string name="answer8">
+     answer8
+</string>
+
 </resources>

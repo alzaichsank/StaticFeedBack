@@ -1,18 +1,568 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="50dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/title_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Help ?"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_18ssp"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"/>
+                        <LinearLayout
+                            android:layout_below="@+id/title_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/help1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
 
-</android.support.constraint.ConstraintLayout>
+                                <ImageView
+                                    android:id="@+id/a1"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help1"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer1"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a2"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help2"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer2"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a3"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help3"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"
+                                    android:text="@string/answer3"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a4"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help4"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer4"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a5"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help5"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer5"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a6"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help6"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer6"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a7"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help7"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer7"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/help8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="3dp">
+
+                                <ImageView
+                                    android:id="@+id/a8"
+                                    android:src="@drawable/expand_up_w"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="start"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="@string/help8"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal|bold" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_4sdp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:src="@drawable/help"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/answer8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp"
+                                android:visibility="gone"
+                                android:background="@color/text_color_soft_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_6sdp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="@string/answer8"
+                                    android:gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
